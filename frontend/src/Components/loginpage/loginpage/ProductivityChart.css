@@ -1,0 +1,9 @@
+/* src/Components/ProductivityChart.css */
+.productivity-chart-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+}

@@ -1,0 +1,25 @@
+.working-hours-section {
+  margin-top: 2rem;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.working-hours-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.working-hours-section th,
+.working-hours-section td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.working-hours-section input[type="month"] {
+  padding: 6px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}

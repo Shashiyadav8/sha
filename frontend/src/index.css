@@ -1,0 +1,13 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f8fa;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+h1, h2 {
+  margin-bottom: 0.5rem;
+}
+

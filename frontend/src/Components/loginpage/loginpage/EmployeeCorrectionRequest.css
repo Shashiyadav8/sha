@@ -1,0 +1,108 @@
+.correction-request {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.correction-request h3 {
+  margin-bottom: 20px;
+  font-size: 1.3rem;
+  color: #333;
+}
+
+.correction-request label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.correction-request input,
+.correction-request textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.correction-request textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.correction-request button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.correction-request button:hover {
+  background-color: #0056b3;
+}
+
+.status-message {
+  margin-top: 15px;
+  font-weight: 500;
+}
+.correction-request {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.correction-request h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.correction-request label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+.correction-request input,
+.correction-request textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.correction-request textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.correction-request button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.correction-request button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.status-message {
+  margin-top: 10px;
+  font-weight: bold;
+}

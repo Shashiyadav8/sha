@@ -1,0 +1,168 @@
+.correction-panel {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 1000px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+.correction-panel h3 {
+  margin-bottom: 15px;
+}
+
+.correction-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.correction-filters input,
+.correction-filters select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  background-color: #f5f5f5;
+  padding: 10px;
+}
+
+tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+button {
+  margin: 0 5px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.reject-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.correction-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.correction-modal {
+  background: white;
+  padding: 25px 20px;
+  width: 420px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.correction-modal h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.correction-modal p {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.correction-modal p strong {
+  display: inline-block;
+  width: 120px;
+  font-weight: 600;
+  color: #333;
+}
+
+.correction-modal textarea {
+  width: 100%;
+  min-height: 60px;
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: vertical;
+}
+
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.submit-btn {
+  background-color: #007bff;
+  color: rgb(24, 185, 72);
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+.submit-btn {
+  background-color: #28a745; /* Bright green */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838; /* Darker green */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.cancel-btn {
+  background-color: #6c757d;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background-color: #5a6268;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 14px;
+}

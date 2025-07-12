@@ -1,0 +1,272 @@
+/* General container */
+.admin-dashboard {
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9fcff;
+  min-height: 100vh;
+}
+
+/* Header */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.dashboard-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.dashboard-header button {
+  padding: 8px 14px;
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dashboard-header button:hover {
+  background-color: #d9363e;
+}
+
+/* Filter Bar */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.filter-bar input,
+.filter-bar button {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.filter-bar button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+}
+
+.filter-bar button:hover {
+  background-color: #3c9e40;
+}
+
+/* Error Message */
+.error-msg {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  padding: 8px 14px;
+  margin: 0.5rem 0;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background-color: #0062cc;
+}
+
+/* Employee Form */
+.employee-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.employee-form input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.employee-form button {
+  padding: 8px 14px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.employee-form button:hover {
+  background-color: #218838;
+}
+
+/* Employee List */
+.employee-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.employee-list li {
+  margin-bottom: 8px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 4px;
+}
+
+.employee-list button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.employee-list button:hover {
+  background-color: #c82333;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+thead {
+  background-color: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 12px 14px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .dashboard-header,
+  .filter-bar,
+  .employee-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-bar input,
+  .filter-bar button,
+  .employee-form input,
+  .employee-form button {
+    width: 100%;
+  }
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+
+  td {
+    padding: 6px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+  }
+}/* Responsive Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+thead {
+  background: #007bff;
+  color: white;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background: #fff;
+    padding: 1rem;
+  }
+
+  td {
+    padding: 0.5rem 1rem;
+    position: relative;
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+}
+.employee-list li {
+  margin-bottom: 1rem;
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 8px;
+  list-style: none;
+}
+

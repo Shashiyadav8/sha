@@ -1,0 +1,152 @@
+.leave-section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.leave-section h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.leave-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-row input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.leave-form button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.leave-form button:hover {
+  background-color: #004a99;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.filters label {
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.filters input,
+.filters select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.leave-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.leave-table th,
+.leave-table td {
+  border: 1px solid #d3c9c9;
+  padding: 10px;
+  text-align: center;
+}
+
+.leave-table th {
+  background-color: #000000;
+}
+
+.cancel-button {
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #c0392b;
+}
+
+.success {
+  color: green;
+  font-weight: 600;
+}
+
+.error {
+  color: red;
+  font-weight: 600;
+}
+
+.leave-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.leave-card {
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.leave-card p {
+  margin: 5px 0;
+}
+
+/* Mobile optimization */
+@media screen and (max-width: 768px) {
+  .leave-form {
+    padding: 15px;
+  }
+
+  .filters {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leave-table {
+    display: none;
+  }
+}

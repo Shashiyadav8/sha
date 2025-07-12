@@ -1,0 +1,96 @@
+.task-section {
+  margin-top: 30px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-section h3 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.task-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.task-form input,
+.task-form button {
+  padding: 8px;
+  font-size: 14px;
+}
+
+.task-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.task-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.task-table th,
+.task-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.task-message {
+  color: green;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Mobile Card Styles */
+.task-cards {
+  display: none;
+}
+
+.task-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Responsive Visibility Control */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .task-form {
+    flex-direction: column;
+  }
+
+  .task-form input, .task-form button {
+    width: 100%;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-only {
+    display: none;
+  }
+
+  .desktop-only {
+    display: table;
+  }
+}
